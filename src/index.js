@@ -32,11 +32,13 @@ const server = new ApolloServer({
         userAPI: new UserAPI({ store })
     })
 });
-
-server.listen(8080).then(() => {
+console.log("=============");
+console.log( process.env.PORT, process.env.NODE_ENV);
+console.log("=============");
+server.listen().then(() => {
     console.log(`
       Server is running!
-      Listening on port 8080
+      Listening on port ${process.env.PORT}
       Explore at https://studio.apollographql.com/sandbox
     `);
 });

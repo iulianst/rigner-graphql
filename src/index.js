@@ -33,12 +33,10 @@ const server = new ApolloServer({
     })
 });
 
-server.listen({
-  port: 4000,
-}).then(() => {
+server.listen(8080).then(() => {
     console.log(`
       Server is running!
-      Listening on port 4000
+      Listening on port 8080
       Explore at https://studio.apollographql.com/sandbox
     `);
 });

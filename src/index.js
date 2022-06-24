@@ -35,7 +35,7 @@ const server = new ApolloServer({
 console.log("=============");
 console.log( process.env.PORT, process.env.NODE_ENV);
 console.log("=============");
-server.listen().then(() => {
+server.listen(8080).then(() => {
     console.log(`
       Server is running!
       Listening on port ${process.env.PORT}

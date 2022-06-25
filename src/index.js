@@ -33,7 +33,7 @@ const server = new ApolloServer({
     })
 });
 console.log("=============");
-console.log(`PORT=${process.env.PORT}, NODE_ENV=`${process.env.NODE_ENV}`);
+console.log(`PORT=${process.env.PORT}, NODE_ENV=${process.env.NODE_ENV}`);
 console.log("=============");
 server.listen(80).then(() => {
     console.log(`

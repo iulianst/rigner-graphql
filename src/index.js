@@ -35,6 +35,8 @@ const server = new ApolloServer({
 const port = process.env.PORT || 4000;
 console.log("=============");
 console.log(`PORT=${process.env.PORT}, NODE_ENV=${process.env.NODE_ENV}`);
+console.log(`WEBSITE_ROLE_INSTANCE_ID=${process.env.WEBSITE_ROLE_INSTANCE_ID}`);
+console.log(`WEBSITE_HTTPLOGGING_ENABLED=${process.env.WEBSITE_HTTPLOGGING_ENABLED}`);
 console.log("=============");
 server.listen(port).then(() => {
     console.log(`

@@ -40,6 +40,11 @@ module.exports.createStore = () => {
     operatorsAliases,
     logging: false,
   });
+  if(db) {
+    console.log(`Database name: ${db.getDatabaseName()} dialect: ${db.getDialect()}`)
+  }else{
+    console.log("Failed to acces sqlite database");
+  }
 
   const users = db.define('user', {
     id: {
